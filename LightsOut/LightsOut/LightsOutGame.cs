@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LightsOut
 {
-    public class LightsOutGame
+    class LightsOutGame
     {
         private int gridSize;
         private bool[,] grid; // Store the on/off state of the grid
@@ -53,7 +49,6 @@ namespace LightsOut
                 }
             }
         }
-
         // Inverts the selected box and all surrounding boxes
         public void Move(int row, int col)
         {
@@ -74,6 +69,7 @@ namespace LightsOut
                 }
             }
         }
+
         // Returns true if all cells are off
         public bool IsGameOver()
         {

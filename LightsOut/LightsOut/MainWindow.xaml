@@ -6,7 +6,17 @@
         xmlns:local="clr-namespace:LightsOut"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Margin="0,54,0,0">
+        <Menu Grid.ColumnSpan="2" Margin="0,-54,0,0">
+            <MenuItem Header="_Game">
+                <MenuItem Header="_New" Click="MenuGame_New_Click" ToolTip="Creates a new game" />
+                <Separator />
+                <MenuItem Header="E_xit" Click="MenuGame_Exit_Click" ToolTip="Exits the game" />
+            </MenuItem>
+            <MenuItem Header="_Help">
+                <MenuItem Header="_About" Click="MenuHelp_About_Click" ToolTip="Shows an about page" />
+            </MenuItem>
+        </Menu>
+        <Canvas Name="boardCanvas" Width="300" HorizontalAlignment="Center" Margin="-4,-31,0,0" />
     </Grid>
 </Window>
